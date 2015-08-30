@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<title>Sam Vitello Portfolio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div id="banner"><img src="images/logo.png" alt="" /></div>
+    <br class="clear" />
+  </div>
+</div>
+<div class="wrapper col2">
+  <div id="topbar">
+    <div id="topnav">
+      <ul>
+        <li><a class="active" href="index.html">Homepage</a>
+          <ul>
+            <li onclick="changeFact(3)"><a href="#picbox">Projects</a></li>
+            <li onclick="changeFact(4)"><a href="Vitello_Resume.pdf">Resume</a></li>
+          </ul>
+        </li>
+        <li><a onclick="changeFact(5)" href="#picbox">About Me</a>
+          <ul>
+            <li onclick="changeFact(1)"><a href="#picbox">Travel</a></li>
+            <!--li onclick="changeFact(2)"><a href="#">Whats New?</a></li-->
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+<div class="wrapper col3">
+  <div id="picbox" align="center"><img id="main_pic" src="images/main_background.png"/>
+  </div>
+  <div id="factbox">
+  </div>
+</div>
+
+<div class="wrapper col5">
+  <div id="footer">
+    <div class="footbox">
+	<h2>Contact</h2>
+      <address>
+      Sam Vitello<br />
+      1572 Patterson St.<br />
+      Eugene OR<br />
+      </address>
+      Tel: (541) 207-5977
+      <!-- -->
+    </div>
+    <div id="column">
+      <div class="flickrbox">
+        <h2 class="title">On The Web</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/sam.vitello"><img src="images/fblogo.png"></a></li>
+          <li><a href="https://www.linkedin.com/pub/sam-vitello/47/bb1/5bb/"><img src="images/linkedin.png"/></a></li>
+          <li class="last"><a href="https://github.com/satello"><img src="images/github_logo.png"></a></li>
+        </ul>
+        <br class="clear" />
+      </div>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">pages.uoregon.edu/vitello/index.html</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+	function changeFact(num){
+		if (num == 1){
+			document.getElementById("factbox").innerHTML = "<h2>Travel</h2><br><p>This past year I have been lucky enough to study abroad in Hong Kong, travel around east and southeast Asia and take a trip to Colombia in South America.</p><br><p>To check out pictures from Hong Kong </p><a href='https://www.facebook.com/media/set/?set=a.10151815666158396.1073741826.622628395&type=1&l=8d5e428d63'>Click Here</a><p>To check out pictures from Cambodia </p><a href='https://www.facebook.com/media/set/?set=a.10151975251243396.1073741831.622628395&type=1&l=9ee4de99e5'>Click Here</a><p>To check out pictures from China </p><a href='https://www.facebook.com/media/set/?set=a.10151914806583396.1073741828.622628395&type=1&l=6a88ea85c1'>Click Here</a><p>To check out pictures from Colombia </p><a href='https://www.facebook.com/media/set/?set=a.10152677100523396.1073741834.622628395&type=1&l=7aab1e3039'>Click Here</a>";
+			document.getElementById("main_pic").src = "images/hk_banner.png";
+		}
+		else if (num == 2){
+		}
+		else if (num == 3) {
+		document.getElementById("factbox").innerHTML = "<h2>Projects</h2><br><h3>University of Oregon International Student Association Website</h3><p>Using the open source bootstrap project I have created a new webpage for the UOISA. ISA is a student organization that helps to welcome and foster the international community on the University of Oregon campus. <a href='http://isa.uoregon.edu'>Click Here</a> to check out the webpage.</p><br><h3>EcNow Tech Catalog Page</h3><p>I am currently building a dynamic webpage for EcNow Tech, a manufacturer of compostable materials based out of Corvallis OR, where customers will be able to place orders online. Get a sneak preview: </p><a href='http://ecnowtech.com/catalog.php'>Click Here</a><br><br><h3>Project ChessStone</h3><p>This summer me and my coworkers from IdTech decided to start making an iPhone game using software called Unity. We are currently in production of our game and it can be found on github:</p><a href='https://github.com/satello/ProjectChessStone'>Click Here</a>";
+		document.getElementById("main_pic").src = "images/comp_banner.png";
+		}
+		else if (num == 4) {
+		}
+		else if (num == 5) {
+			document.getElementById("factbox").innerHTML = "<h2>About Me</h2><br><p>Hello and thanks for checking out my website! My name is Sam Vitello and I am in my final year at the University of Oregon studying computer science and mathematics. I enjoy getting outside and taking advantage of all of the beautiful places in Oregon whenever I can. If you would like to contact me you can find my contact information below. On this site you can also find things such as my resume, the projects that I am currently working on and some pictures of places I have travelled. Go Blazers!</p>";
+			document.getElementById("main_pic").src = "images/about_banner.png"; 
+		}
+	
+	}
+</script>
+</html>
