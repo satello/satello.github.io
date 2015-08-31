@@ -54,7 +54,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:18px;
 	text-transform:uppercase;
-	border-bottom:1px dotted #666666;
+	text-decoration: none;
 	}
 
 #topnav li a.active{
