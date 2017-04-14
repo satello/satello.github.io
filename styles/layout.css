@@ -155,7 +155,15 @@ a:hover{
 }
 
 .info_overlay img{
-	
+
+}
+
+#about_me {
+	margin-top: 50px;
+}
+
+.appointment-p h1 {
+	margin-bottom: 20px;
 }
 
 /* ----------------------------------------------Footer-------------------------------------*/
@@ -203,7 +211,6 @@ a:hover{
 
 #footer .footbox{
 	display:block;
-	float:left;
 	width:300px;
 	margin-left:20%;
 	padding:0;
