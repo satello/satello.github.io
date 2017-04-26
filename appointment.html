@@ -6,17 +6,6 @@
 <link rel="stylesheet" href="styles/layout.css" type="text/css" />
 <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.consultationkit.com/widget.min.js"></script>
-<script type="text/javascript">
-var widget = new ConsultationKit();
-widget.init({
-     targetEl:"#ck-widget",
-     calendar:"f7622e62-1fee-11e7-9f73-0e9b8b43f288"
-});
-</script>
-</script>
 </head>
   <body id="top">
   <div class="wrapper col1">
@@ -28,6 +17,15 @@ widget.init({
   <div class="wrapper">
     <div class="info_overlay row">
       <div class="appointment col-md-8 col-md-offset-2">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.consultationkit.com/widget.min.js"></script>
+        <script type="text/javascript">
+        var widget = new ConsultationKit();
+        widget.init({
+             targetEl:"#ck-widget",
+             calendar:"f7622e62-1fee-11e7-9f73-0e9b8b43f288"
+        });
+        </script>
         <div id="ck-widget"></div>
         <p>
           I feel that this concept deserves a bit of an explaination as it is somewhat unconventional.
