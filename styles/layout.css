@@ -141,3 +141,42 @@ a:hover{
 	margin: 0px;
 	color: #3d9d51;
 }
+/*-----------------------------------------------Theater------------------------------------------*/
+#screen {
+	margin-left: 60px;
+	margin-top: 50px;
+	z-index: 1;
+	position: absolute;
+	height: 90vh;
+	width: 120vh;
+	display: block;
+	background-color: black;
+}
+
+#screen iframe {
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 120vh;
+	height: 90vh;
+	position: absolute;
+}
+
+#tv-set {
+	margin-left: 50px;
+	margin-top: 50px;
+	height: 100vh;
+	display: block;
+	z-index: 50;
+	position: absolute;
+}
+
+.next-btn {
+	position: absolute;
+	right: 50px;
+	cursor: pointer;
+	padding: 10px;
+	background-color: #3d9d51;
+	color: white;
+	margin-top: 60px;
+	z-index: 60;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+<title>Webpage of Sam Vitello</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body id="top">
+  <div class="wrapper col1">
+    <div id="header">
+      <div id="banner"><a href="http://samvitello.com" alt="" /></a>
+      <br class="clear" />
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div id="screen">
+      <iframe id="youtube-frame" src="https://www.youtube.com/embed/mfycQJrzXCA?autoplay=1"></iframe>
+    </div>
+    <img id="tv-set" src="./images/old_tv.png" />
+    <div class="next-btn" onClick="changeChannel()">Change Channel</div>
+  </div>
+</body>
+<script>
+  var counter = 0;
+
+  var media = [
+    "https://www.youtube.com/embed/eiWIOKKuyGE?autoplay=1",
+    "https://www.youtube.com/embed/TtPrnbmr5JI?autoplay=1",
+    "https://www.youtube.com/embed/4txVqr1eNwc?autoplay=1",
+    "https://www.youtube.com/embed/Zgk8UdV7GQ0?autoplay=1",
+    "https://www.youtube.com/embed/AKTsJpfC0IQ?autoplay=1",
+    "https://www.youtube.com/embed/VUFDo0fi6EQ?autoplay=1",
+    "https://www.youtube.com/embed/mejFtEY5faU?autoplay=1",
+  ]
+
+  function changeChannel() {
+    $("#youtube-frame").attr("src", media[counter]);
+    counter = (counter + 1) % media.length;
+  }
+</script>
+</html>
