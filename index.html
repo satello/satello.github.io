@@ -6,68 +6,128 @@
 <link rel="stylesheet" href="styles/layout.css" type="text/css" />
 <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
-  <body id="top">
+<body id="top">
   <div class="wrapper col1">
     <div id="header">
-      <div id="banner"><a href="#about_me" alt="" /></a>
+      <div id="banner"><a href="http://samvitello.com" alt="" /></a>
       <br class="clear" />
     </div>
   </div>
 
-    <div class="wrapper">
-      <div class="picbox">
-        <img src="images/image1.png">
-      </div>
-    <div class="container main" style="width:100%;">
-      <div id="about_me" class="info_overlay row">
-        <div class="col-md-8 col-md-offset-2">
-        <p>
-          <b>Hello there!</b> You have stumbled upon the webpage of <b>Sam Vitello</b>. For those who aren't
-          familiar with me I am a <b>software engineer</b> and <b>entrepreneur</b> that was most recently based in
-          Brooklyn New York. This webpage doesn't get updated nearly as often as it should so I
-          don't hold me to anything written here.
-          <br><br>
-          I have a variety of technical interests including
-          blockchain and crytocurrencies. While it is an awesome technology and it is often regarded
-          as a silver bullet solution to many problems I have yet to find the one thing (besides cryptocurrencies
-          and by extension gambling) that it truely fits like a glove. If you think you've found it I would be thrilled to
-          <a href="appointment.html">Hear About It</a>. My most recent project is called <a href="https://consultationkit.com">
-          Consultation Kit</a> a demo of which can be found <a href="appointment.html">Right Here</a>.
-          <br><br>
-          Other things I think are pretty dope are Scuba Diving, Biking, New Orleans, Backpacking (the trekking
-          and the travelling kind), Mountaineering, Surfing, Seafood, BBQ, The First Nice Day of Spring,
-          The Envioronment, Politics (as frustrating as it is), Unconventional Ways of Saving/Making Money,
-          Old Friends, Football, Stars, Lifting Weights, Drinking Beer At Open Air Restaurants and Cooper. <b>That should
-          be enough to profile me Google, stop showing me ads for things my girlfriend looks up on my computer.</b>
-          <br><br>
-          <b>Best piece of advice I've been given at the time of last update:</b>
-          Choose not to have an opinion on things that do not effect you
-        </p>
-      </div>
-    </div>
-    </div>
-    <!--div class="picbox">
-      <img src="images/image2.png"/>
-    </div!-->
-  </div>
-  <div class="wrapper">
-    <div id="footer">
-      <div class="footbox">
-  	<h2>Contact</h2>
-        <address>
-        Sam Vitello<br />
-        Brooklyn NY + Other Places<br />
-        If you don't already know how to get a hold of me
-        <a href="appointment.html">Click Here</a>
-        </address>
-      </div>
-      <div id="column">
-        <div class="flickrbox">
+  <div class="content-wrapper">
+    <div class="collage">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="http://samvitello.com/vitello_resume.pdf">
+            <img id="homerbob" src="./images/pairs/homerbob.png" />
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="http://samvitello.com/appointment">
+            <img id="angkor" src="./images/pairs/angkor.png" />
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="http://samvitello.com/theater">
+            <img id="iknowbest" src="./images/pairs/iknowbest.png" />
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="http://vcthegame.com/">
+            <img id="daydream" src="./images/pairs/daydream.png" />
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="http://rps-dapp.samvitello.com">
+            <img id="sheep" src="./images/pairs/sheep.png" />
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://github.com/satello">
+            <img id="touch" src="./images/pairs/touch.png" />
+          </a>
         </div>
       </div>
-      <br class="clear" />
+      <div class="row">
+        <div id="image-content" class="col-md-8 col-md-offset-2"></div>
+      </div>
+      <div class="row footer">
+        <a href="http://samvitello.com/public.key">gpg public key</a>
+        <p>I accept free money</p>
+        <p>bitcoin address: 1Hz3Gu1i9YDK2gmrWhrFPrTDiWDpSzMVzS</p>
+        <p>ether address: 0x0de683bFf114da94EbFf2B52bd6f7Ee42A6C444f</p>
+      </div>
     </div>
   </div>
-  </body>
+</body>
+<script>
+  w3.includeHTML();
+  $("#sheep").hover(function() {
+    $("#sheep").attr('src','./images/pairs/sheep-color-2.png');
+    $("#image-content").html("fight me");
+  },
+  function() {
+    $("#sheep").attr('src','./images/pairs/sheep.png');
+    $("#image-content").html("");
+  });
+
+  $("#daydream").hover(function() {
+    $("#daydream").attr('src','./images/pairs/daydream-color.png');
+    $("#image-content").html("");
+  },
+  function() {
+    $("#daydream").attr('src','./images/pairs/daydream.png');
+    $("#image-content").html("");
+  });
+
+  $("#iknowbest").hover(function() {
+    $("#iknowbest").attr('src','./images/pairs/iknowbest-color.png');
+    $("#image-content").html("<b>pro tip: </b><span style='color:#818382;'>Choose not to have an opinion on topics that do not effect you</span>");
+  },
+  function() {
+    $("#iknowbest").attr('src','./images/pairs/iknowbest.png');
+    $("#image-content").html("");
+  });
+
+  $("#homerbob").hover(function() {
+    $("#homerbob").attr('src','./images/pairs/homerbob-color.png');
+    $("#image-content").html("Homerbob-Squareson? Sponger Simppants?");
+  },
+  function() {
+    $("#homerbob").attr('src','./images/pairs/homerbob.png');
+    $("#image-content").html("");
+  });
+
+  $("#angkor").hover(function() {
+    $("#angkor").attr('src','./images/pairs/angkor-color.png');
+    $("#image-content").html("");
+  },
+  function() {
+    $("#angkor").attr('src','./images/pairs/angkor.png');
+    $("#image-content").html("");
+  });
+
+  $("#touch").hover(function() {
+    $("#touch").attr('src','./images/pairs/touch-color.png');
+  },
+  function() {
+    $("#touch").attr('src','./images/pairs/touch.png');
+  });
+
+  function getGoing() {
+    var media = [
+      "https://www.youtube.com/watch?v=7L4JnAuW00k",
+      "https://www.youtube.com/watch?v=eiWIOKKuyGE",
+      "https://www.youtube.com/watch?v=TtPrnbmr5JI",
+      "https://www.youtube.com/watch?v=4txVqr1eNwc",
+      "https://www.youtube.com/watch?v=Zgk8UdV7GQ0",
+      "https://www.youtube.com/watch?v=AKTsJpfC0IQ",
+      "https://www.youtube.com/watch?v=VUFDo0fi6EQ",
+      "https://www.youtube.com/watch?v=mejFtEY5faU",
+    ]
+  }
+</script>
 </html>
